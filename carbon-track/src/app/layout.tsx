@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { minhaFonte} from "@/app/font/font"
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>
+      <body className={`${minhaFonte.className} antialiased`}>
         {children}
       </body>
     </html>
