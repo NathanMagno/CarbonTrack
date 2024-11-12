@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .ContainerNotFound {
+      @apply flex   items-center justify-center   m-0 p-[30vh] box-border min-h-screen bg-gray-900;
+    }
+  }
+  
+  .titulo404{
+      @apply text-secondary text-3xl
+  }
+  
+
+.info404{
+    @apply text-secondary mb-8
+}
+
+@layer components {
+.ContainerMsgNotFound{
+    @apply  flex  flex-col  gap-20  m-0 p-0 box-border min-h-screen bg-gray-900
+}
+}
