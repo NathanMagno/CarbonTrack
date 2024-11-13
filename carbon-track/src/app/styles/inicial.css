@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.MenuContainer{
+   @apply w-[36vw] h-[80vh] bg-primary text-white p-4 space-y-4 flex flex-col justify-center 
+}
