@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import Menu from "@/icons/menu-100x100.png";
-import "@/app/styles/inicial.css"
+
 
 export default function Cabecalho() {
   const router = useRouter();
@@ -35,11 +35,11 @@ export default function Cabecalho() {
 
   return (
     <>
-      <header className="block hidden xl:flex bg-primary text-white w-full p-4">
-        <div className="container mx-auto flex items-center justify-between">
-          <nav className="flex space-x-6">
+      <header className="Cabecalho">
+        <div className="ContainerCabecalho">
+          <nav className="NavCabecalho">
             <button
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:outline-none"
               onClick={() => navegar("/")}
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -47,7 +47,7 @@ export default function Cabecalho() {
               </span>
             </button>
             <button
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:outline-none"
               onClick={() => navegar("/sobre")}
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -55,7 +55,7 @@ export default function Cabecalho() {
               </span>
             </button>
             <button
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:outline-none"
               onClick={() => navegar("/servicos")}
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -63,7 +63,7 @@ export default function Cabecalho() {
               </span>
             </button>
             <button
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-secondary group-hover:from-green-400 group-hover:to-secondary hover:text-black dark:text-white focus:outline-none"
               onClick={() => navegar("/contato")}
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -86,29 +86,29 @@ export default function Cabecalho() {
       </div>
 
       {menuAberto && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-end z-40">
+        <div className="ContainerMobile">
           <div className="MenuContainer">
             <span
               onClick={() => navegar("/")}
-              className="block hover:underline cursor-pointer"
+              className="ItensCabecalhoMobile"
             >
               Início
             </span>
             <span
               onClick={() => navegar("/sobre")}
-              className="block hover:underline cursor-pointer"
+              className="ItensCabecalhoMobile"
             >
               Sobre
             </span>
             <span
               onClick={() => navegar("/servicos")}
-              className="block hover:underline cursor-pointer"
+              className="ItensCabecalhoMobile"
             >
               Calcular emissão
             </span>
             <span
               onClick={() => navegar("/contato")}
-              className="block hover:underline cursor-pointer"
+              className="ItensCabecalhoMobile"
             >
               Integrantes
             </span>

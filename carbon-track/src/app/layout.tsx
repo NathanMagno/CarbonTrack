@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./styles/globals.css";
 import { minhaFonte} from "@/app/font/font"
 import Cabecalho from "@/components/Cabecalho/Cabecalho";
+import Rodape from "@/components/Rodape/Rodape";
 
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${minhaFonte.className} antialiased`}>
         <Cabecalho/>
         {children}
+        <Rodape/>
       </body>
     </html>
   );
