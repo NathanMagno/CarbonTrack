@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#021666',
+        primary: '#080B05',
         secondary: '#00BF00',
+        fiap:'#ed145b',
       },
       screens: {
         "2xl": "1440px",

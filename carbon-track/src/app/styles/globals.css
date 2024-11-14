@@ -13,7 +13,7 @@
  }
  
  .Cabecalho{
-     @apply block hidden xl:flex bg-primary text-white w-full p-4 
+     @apply block hidden xl:flex bg-primary text-white w-full p-4  pt-7
  }
  
  
@@ -21,9 +21,9 @@
      @apply  container mx-auto flex items-center xl:pl-[5vw] 
  }
  
- .NavCabecalho{
-     @apply flex gap-12
- }
+ .NavCabecalho {
+    @apply grid grid-cols-2 justify-items-center w-screen; 
+  }
  
  .ItensCabecalhoMobile{
      @apply block hover:underline cursor-pointer
@@ -32,3 +32,36 @@
  .ContainerMobile{
      @apply fixed inset-0 bg-black bg-opacity-50 flex justify-end z-40
  }
+
+ @layer utilities {
+    .hover-text-shadow {
+      text-shadow: 0px 0px 15px #00BF00;
+    
+    }
+  }
+  
+  .ContainerCabecalhoFuncionalidades{
+    @apply flex flex-row gap-14
+}
+
+  .BtnCabecalho {
+    @apply rounded-[4px]
+      px-[45px] py-[15px] text-[20px] 
+      bg-transparent border-2 border-secondary text-secondary 
+      cursor-pointer transition-all duration-200 
+      hover:shadow-[0px_0px_12px_#00BF00,inset_0px_0px_12px_#00BF00]; 
+  }
+  
+  .BtnIntegrantes {
+    @apply rounded-[4px]
+      px-[45px] py-[15px] text-[20px] 
+      bg-transparent border-2 border-fiap text-fiap 
+      cursor-pointer transition-all duration-200 
+      hover:shadow-[0px_0px_12px_#ed145b,inset_0px_0px_12px_#ed145b]; 
+  }
+
+
+  .BtnCabecalho:hover {
+    @apply hover-text-shadow;
+  }
+
