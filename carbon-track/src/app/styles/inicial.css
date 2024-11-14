@@ -8,5 +8,5 @@
 }
 
 .BgInicial{
-    @apply grid grid-cols-[60vw_5vw_25vw] grid-rows-[120vh]
+    @apply grid grid-cols-[60vw_5vw_25vw] grid-rows-[160vh]
 }
