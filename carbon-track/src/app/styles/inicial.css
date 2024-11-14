@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 
+.ContainerFuncionaliodade{
+    @apply bg-inicial
+}
+
+.BgInicial{
+    @apply grid grid-cols-[60vw_5vw_25vw] grid-rows-[120vh]
+}

@@ -12,6 +12,7 @@ const config: Config = {
         primary: '#080B05',
         secondary: '#00BF00',
         fiap:'#ed145b',
+        inicial:'#1d2a44'
       },
       screens: {
         "2xl": "1440px",

@@ -16,6 +16,10 @@
      @apply block hidden xl:flex bg-primary text-white w-full p-4  pt-7
  }
  
+ .Rodape{
+  @apply  block absolute bg-primary   w-full
+ }
+ 
  
  .ContainerCabecalho{
      @apply  container mx-auto flex items-center xl:pl-[5vw] 

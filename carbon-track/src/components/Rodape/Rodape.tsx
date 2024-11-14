@@ -16,13 +16,13 @@ export default function Rodape() {
     <>
         
 
-<footer className="bg-primary  shado w-screen ">
+<footer className="Rodape ">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-4 flex flex-row justify-around items-center">
         <div className="sm:flex sm:items-center sm:justify-between">
          <Image alt="Logo Carbon Track" src={Logo} width={120} height={100} className="rounded-3xl  w-auto" priority/>
         </div>
       
-        <span className="block text-sm text-secondary sm:text-center"> © {anoAtual} Carbon Track. Todos os direitos reservados. <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+        <span className="block text-sm text-secondary sm:text-center"> © {anoAtual} Carbon Track. Todos os direitos reservados.</span>
     </div>
 </footer>
 
