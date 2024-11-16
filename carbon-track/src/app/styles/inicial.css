@@ -2,11 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.ContainerFuncionaliodade{
-    @apply bg-inicial
+.ContainerFuncionaliodade {
+    @apply bg-gray-950;
 }
 
-.BgInicial{
-    @apply grid grid-cols-[60vw_5vw_25vw] grid-rows-[160vh]
+.BgInicial {
+    @apply grid xl:grid-cols-[3fr_1fr] grid-rows-[160vh] mobile:grid-cols-[100%];
+}
+
+.ContainerVideos {
+    @apply flex flex-col items-center justify-center gap-8 lg:gap-8 3xl:gap-12 p-12 bg-gray-950 mobile:hidden lg:flex;
+}
+
+.TextoInfoVideos {
+    @apply font-bold;
+}
+
+.InfoVideos {
+    @apply text-center text-neutral-300 3xl:text-[20px] lg:text-[14px] font-medium max-w-3xl px-4;
+}
+
+.ContainerVideo {
+    @apply relative flex flex-col items-center bg-primary p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_18px_#00BF00];
+}
+
+.ImgVideo {
+    @apply overflow-hidden rounded-lg shadow-md mb-4 w-full h-auto md:w-64;
+}
+
+.TextoVideo {
+    @apply text-center text-secondary 3xl:text-[14px] lg:text-[12px] leading-relaxed px-4;
 }
