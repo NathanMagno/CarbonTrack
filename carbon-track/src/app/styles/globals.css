@@ -72,7 +72,7 @@
   .Botao{
     @apply  rounded-[10px]
     lg:px-[20px] lg:py-[10px] mobile:px-[10px] mobile:py-[6px] lg:text-[20px]  mobile:text-[16px]
-    bg-gray-200 border-2 border-secondary text-secondary 
+    bg-gray-200 text-secondary 
     cursor-pointer transition-all duration-200 
-    shadow-[0px_0px_6px_#00BF00]; 
+    shadow-[0px_0px_8px_#00BF00]; 
 }

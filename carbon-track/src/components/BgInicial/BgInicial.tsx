@@ -19,16 +19,16 @@ export default function BgInicial() {
              e informar os usuários sobre o impacto ambiental das emissões de CO₂ geradas no ambiente doméstico.
               Reconhecendo a falta de informações acessíveis sobre esse tema, oferecemos uma ferramenta exclusiva para calcular as emissões de CO₂
                geradas dentro das residências. Com esse recurso, os usuários podem entender de forma personalizada como seus hábitos cotidianos contribuem para a poluição,
-             promovendo uma conscientização mais profunda e a oportunidade de adotar práticas mais sustentáveis."/>
+             promovendo uma conscientização mais profunda e a oportunidade de adotar práticas mais sustentáveis." largura={260}/>
 
             <Funcionalidade destino="/calcular" img={Calculo} txt="Para calcular a emissão de CO₂ gerada em sua residência,
              a Carbon Track utiliza informações fornecidas diretamente pelo usuário sobre o consumo doméstico de energia.
               Os dados incluem o uso de eletricidade, gás e outros eletrônicos, que são essenciais para a precisão do cálculo. 
               Com esses dados, aplicamos uma fórmula simplificada que multiplica a quantidade consumida por um fator de emissão específico
-               para cada tipo de energia, estimando assim a quantidade de CO₂ equivalente que esse consumo gera."/>
+               para cada tipo de energia, estimando assim a quantidade de CO₂ equivalente que esse consumo gera." largura={340}/>
 
             <Funcionalidade destino="/integrantes" img={Integrantes} txt="Nossa equipe de profissionais que contribuiu para este projeto, contendo o Linkeedin e Github de
-             cada integrante para que você possa conhecer mais sobre o trabalho de cada um."/>
+             cada integrante para que você possa conhecer mais sobre o trabalho de cada um." largura={100}/>
 
       </section>
     

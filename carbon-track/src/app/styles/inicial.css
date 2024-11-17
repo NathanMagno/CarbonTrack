@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .Funcionaliodades {
-    @apply bg-cyan-950  flex flex-col lg:gap-14 py-[4vh];
+    @apply bg-cyan-950  flex flex-col lg:gap-14 mobile:gap-8 py-[4vh];
 }
 
 .BgInicial {
-    @apply grid xl:grid-cols-[3fr_1fr] grid-rows-[160vh] mobile:grid-cols-[100%];
+    @apply grid xl:grid-cols-[3fr_1fr] h-[100%] mobile:grid-cols-[100%] text-center;
 }
 
 .ContainerVideos {
@@ -23,7 +23,7 @@
 }
 
 .ContainerVideo {
-    @apply relative flex flex-col items-center bg-primary p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0px_0px_18px_#00BF00];
+    @apply relative flex flex-col items-center bg-primary p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0px_0px_18px_#ed145b];
 }
 
 .ImgVideo {
@@ -31,15 +31,15 @@
 }
 
 .TextoVideo {
-    @apply text-center text-secondary 3xl:text-[14px] lg:text-[12px] leading-relaxed px-4;
+    @apply text-center text-fiap 3xl:text-[14px] lg:text-[12px] leading-relaxed px-4;
 }
 
 .txtFuncionalidade{
-    @apply text-secondary
+    @apply text-secondary mobile:py-8 lg:py-0  
 }
 
 .ContainerFuncionalidade{
-    @apply bg-primary flex flex-col  text-[18px] lg:mx-[2vw]  hover:scale-105 transition-transform duration-300
+    @apply bg-primary flex flex-col  text-[18px] lg:mx-[2vw] mobile:px-6 rounded-md mobile:mx-[6vw]  hover:scale-105 transition-transform duration-300 hover:shadow-[0px_0px_18px_#00BF00];
 }
 
 .ContainerButtonFuncionalidade{
@@ -47,9 +47,13 @@
 }
 
 .ImageFuncionalidade{
-    @apply w-[60%] rounded-md
+    @apply rounded-md
 }
 
 .TopFuncionalidade{
     @apply grid lg:grid-cols-[40%_60%] py-[1.8vh] px-[1vw]
+}
+
+.ImgFuncionalidade{
+    @apply block m-auto
 }
