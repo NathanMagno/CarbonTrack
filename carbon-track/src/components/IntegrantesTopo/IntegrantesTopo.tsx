@@ -1,6 +1,5 @@
 
 
-
 export default function IntegrantesTopo() {
     return (
         <>

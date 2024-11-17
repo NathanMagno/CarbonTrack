@@ -1,5 +1,7 @@
 "use client"
+import BgFuncionalidades from "@/components/BgFuncionalidades/BgFuncionalidades";
 import { useEffect } from "react";
+
 
 export default function Sobre() {
   
@@ -11,7 +13,11 @@ export default function Sobre() {
   return (
     <>
     
-    
+    <BgFuncionalidades>
+
+      <p>a</p>
+
+    </BgFuncionalidades>
 
 
     </>
