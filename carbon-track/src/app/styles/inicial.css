@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .Funcionaliodades {
-    @apply bg-gray-950;
+    @apply bg-cyan-950  flex flex-col lg:gap-14 py-[4vh];
 }
 
 .BgInicial {
@@ -11,7 +11,7 @@
 }
 
 .ContainerVideos {
-    @apply flex flex-col items-center justify-center gap-8 lg:gap-8 3xl:gap-12 p-12 bg-gray-950 mobile:hidden lg:flex;
+    @apply flex flex-col items-center justify-center gap-8 lg:gap-8 3xl:gap-12 p-12 bg-cyan-950 mobile:hidden lg:flex;
 }
 
 .TextoInfoVideos {
@@ -23,7 +23,7 @@
 }
 
 .ContainerVideo {
-    @apply relative flex flex-col items-center bg-primary p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_18px_#00BF00];
+    @apply relative flex flex-col items-center bg-primary p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0px_0px_18px_#00BF00];
 }
 
 .ImgVideo {
@@ -34,3 +34,22 @@
     @apply text-center text-secondary 3xl:text-[14px] lg:text-[12px] leading-relaxed px-4;
 }
 
+.txtFuncionalidade{
+    @apply text-secondary
+}
+
+.ContainerFuncionalidade{
+    @apply bg-primary flex flex-col  text-[18px] lg:mx-[2vw]  hover:scale-105 transition-transform duration-300
+}
+
+.ContainerButtonFuncionalidade{
+    @apply flex items-center justify-center p-5
+}
+
+.ImageFuncionalidade{
+    @apply w-[60%] rounded-md
+}
+
+.TopFuncionalidade{
+    @apply grid lg:grid-cols-[40%_60%] py-[1.8vh] px-[1vw]
+}

@@ -18,20 +18,21 @@ export default function Funcionalidade({img, txt, destino}: FuncionalidadeProps)
 
   return (
     <>
-    <div className="ContainerFuncionalidade">
+    <article  className="ContainerFuncionalidade">
+        <section className="TopFuncionalidade">
         <div className="ImgFuncionalidade">
-            <Image alt="Imagem ilustrativa de funcionalidade" src={img}/>
+            <Image alt="Imagem ilustrativa de funcionalidade" src={img} className="ImageFuncionalidade"/>
         </div>
 
         <div className="InfoFuncionalidade">
-            <p>{txt}</p>
+            <p className="txtFuncionalidade">{txt}</p>
         </div>
-
-        <div>
+        </section>
+        <div className="ContainerButtonFuncionalidade">
             <button className="Botao" onClick={navegar}>Saber mais</button>
         </div>
 
-    </div>
+    </article>
     </>
   )
 }
