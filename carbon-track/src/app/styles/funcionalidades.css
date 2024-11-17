@@ -2,76 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-.BgFuncionalidade{
-    @apply bg-inicial h-[100%] block m-auto p-0
+.BgFuncionalidade {
+    @apply bg-inicial h-[100%] block m-auto p-0;
 }
 
-.ContainerIntegrantes{
-    @apply flex  mt-16  pb-8 items-start justify-center 
-    }
+.ContainerIntegrantes {
+    @apply flex mt-16 pb-8 items-start justify-center;
+}
 
-.IntegrantesTitulo{
-        @apply xl:text-[32px]  rounded-xl px-10  bg-fiap xl:w-[20vw] mobile:w-[50vw]
-    }
-
+.IntegrantesTitulo {
+    @apply xl:text-[32px] rounded-xl px-10 bg-fiap xl:w-[20vw] mobile:w-[50vw];
+}
 
 .IntegrantesInfo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
-  }
-  
-  .IntegrantesInfo figure {
+    text-align: center;
+}
+
+.IntegrantesInfo figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
-  }
-  
-  .IntegrantesInfo img {
+}
+
+.IntegrantesInfo img {
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+}
 
-  .IntegrantesInfo span {
-    display: block;
-    text-align: center;
+.IntegrantesInfo .nome,
+.IntegrantesInfo .rm,
+.IntegrantesInfo .social-links {
     margin-top: 0.5rem;
+}
+
+.IntegrantesInfo .nome {
     font-weight: bold;
     color: #333;
-  }
-  
+}
 
-  @media (max-width: 1024px) {
-    .IntegrantesInfo {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .IntegrantesInfo {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+.IntegrantesInfo .rm {
+    font-size: 0.9rem;
+    color: #555;
+}
 
-  .ListaGitHub {
+.social-links {
     display: flex;
+    gap: 0.5rem;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .ListaGitHub a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .GitHub {
-    width: 50px;
-    height: 50px;
-  }
-  
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .IntegrantesInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .IntegrantesInfo {
+        grid-template-columns: 1fr;
+    }
+}

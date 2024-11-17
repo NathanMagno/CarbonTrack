@@ -36,7 +36,16 @@ import "@/app/styles/funcionalidades.css"
                                                          <a href="https://github.com/Hitz299" target="_blank"><Image className="GitHub" width={100} height={100}
                                                                  src="/github-icone.png"
                                                                  alt="git hub Nathan" /></a>
-
+                                                            
+                                                            <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                                 src="/linkedin.png"
+                                                                 alt="git hub Gabriel" /></a>
+                                                         <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                                 src="/linkedin.png"
+                                                                 alt="git hub Gustavo" /></a>
+                                                         <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                                 src="/linkedin.png"
+                                                                 alt="git hub Nathan" /></a>
                                                   
                                                  </div>
                                          </nav>
