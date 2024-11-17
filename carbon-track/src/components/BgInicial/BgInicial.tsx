@@ -3,35 +3,22 @@ import "@/app/styles/inicial.css"
 import YINL from "@/imgs/ciclo-um-ano.jpg"
 import MDC from "@/imgs/mercado-de-carbono.jpg"
 import VN from "@/imgs/emissao-carbono-terra.jpg"
+import Logo from "@/icons/logo-CarbonTrack.png"
+import Calculo from "@/imgs/casa.jpg"
+import Integrantes from "@/imgs/github-640x640.png"
 import ContainerVideo from "../ContainerVideo/ContainerVideo"
+import Funcionalidade from "../Funcionalidade/Funcionalidade"
 
 export default function BgInicial() {
   return (
     <main className="BgInicial">
 
-        <section className="ContainerFuncionaliodade">
-            <div className="ImgFuncionalidade">
+        <section className="Funcionaliodades">
+            
+            <Funcionalidade destino="/sobre" img={Logo} txt=""/>
+            <Funcionalidade destino="/calcular" img={Calculo} txt=""/>
+            <Funcionalidade destino="/integrantes" img={Integrantes} txt=""/>
 
-           </div>
-
-            <div className="InfoFuncionalidade">
-
-           </div>
-     
-            <div className="ImgFuncionalidade">
-
-          </div>
-          <div className="InfoFuncionalidade">
-
-          </div>
-        
-          <div className="ImgFuncionalidade">
-
-          </div>
-
-        <div className="InfoFuncionalidade">
-
-        </div>
       </section>
     
       <article className="ContainerVideos">

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.ContainerFuncionaliodade {
+.Funcionaliodades {
     @apply bg-gray-950;
 }
 
@@ -33,3 +33,4 @@
 .TextoVideo {
     @apply text-center text-secondary 3xl:text-[14px] lg:text-[12px] leading-relaxed px-4;
 }
+
