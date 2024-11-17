@@ -69,17 +69,18 @@ export default function Cabecalho() {
           </nav>
         </div>
       </header>
-
+      
       <div className="xl:hidden fixed top-4 right-4 z-50">
-        <div className="rounded-full bg-primary p-1">
-          <Image
-            alt="Menu"
-            src={Menu}
-            width={40}
-            onClick={() => setMenuAberto(!menuAberto)}
-          />
-        </div>
-      </div>
+  <div className="rounded-full bg-primary p-1 border-[2px] border-secondary">
+    <Image
+      alt="Menu"
+      src={Menu}
+      width={40}
+      onClick={() => setMenuAberto(!menuAberto)}
+    />
+  </div>
+</div>
+
 
       {menuAberto && (
         <div className="ContainerMobile">
