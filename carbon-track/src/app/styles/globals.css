@@ -8,7 +8,7 @@
     box-sizing: border-box;
     }
 
-.MenuContainer{
+.menu-container{
     @apply w-[36vw] h-[80vh] bg-primary text-white p-4 space-y-4 flex flex-col justify-center 
  }
  
@@ -33,9 +33,10 @@
      @apply block hover:underline cursor-pointer
  }
  
- .ContainerMobile{
-     @apply fixed inset-0 bg-black bg-opacity-50 flex justify-end z-40
- }
+ .ContainerMobile {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex justify-end z-50;
+}
+
 
  @layer utilities {
     .hover-text-shadow {

@@ -39,7 +39,7 @@
 }
 
 .ContainerFuncionalidade{
-    @apply bg-primary flex flex-col  text-[18px] lg:mx-[2vw] mobile:px-6 rounded-md mobile:mx-[6vw]  hover:scale-105 transition-transform duration-300 hover:shadow-[0px_0px_18px_#00BF00];
+    @apply bg-primary flex flex-col  text-[18px] 2xl:mx-[8em] xl:mx-[3em] lg:mx-[2em] md:text-[14px] mobile:px-6 rounded-md mobile:mx-[6vw]  hover:scale-105 transition-transform duration-300 hover:shadow-[0px_0px_18px_#00BF00];
 }
 
 .ContainerButtonFuncionalidade{

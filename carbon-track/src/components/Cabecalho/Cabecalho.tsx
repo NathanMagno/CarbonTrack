@@ -83,7 +83,7 @@ export default function Cabecalho() {
 
       {menuAberto && (
         <div className="ContainerMobile">
-          <div className="MenuContainer">
+           <div className="menu-container">
             <span
               onClick={() => navegar("/")}
               className="ItensCabecalhoMobile"
@@ -97,13 +97,13 @@ export default function Cabecalho() {
               Sobre
             </span>
             <span
-              onClick={() => navegar("/servicos")}
+              onClick={() => navegar("/calcular")}
               className="ItensCabecalhoMobile"
             >
               Calcular emissão
             </span>
             <span
-              onClick={() => navegar("/contato")}
+              onClick={() => navegar("/integrantes")}
               className="ItensCabecalhoMobile"
             >
               Integrantes
