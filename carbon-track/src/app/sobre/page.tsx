@@ -1,5 +1,6 @@
 "use client"
 import BgFuncionalidades from "@/components/BgFuncionalidades/BgFuncionalidades";
+import SobreComponent from "@/components/SobreComponent/SobreComponent";
 import { useEffect } from "react";
 
 
@@ -7,7 +8,7 @@ export default function Sobre() {
   
   
   useEffect (() => {
-    document.title = "Sobre Nos"
+    document.title = "Sobre"
   }, []);
 
   return (
@@ -15,7 +16,7 @@ export default function Sobre() {
     
     <BgFuncionalidades>
 
-      <p>a</p>
+      <SobreComponent/>
 
     </BgFuncionalidades>
 

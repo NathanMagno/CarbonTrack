@@ -8,7 +8,7 @@ export default function BgFuncionalidades({children}: BgFuncionalidadesProps) {
   return (
     <>
      <main className="BgFuncionalidade">
-          {children}
+          {children}  
         </main>
     </>
   )
