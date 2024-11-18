@@ -4,7 +4,7 @@ export default function TabelaPegadaCarbono() {
       <h2 className="text-2xl font-bold mb-4 text-center text-secondary">Classificação da Pegada de Carbono</h2>
       
       <div className="overflow-x-auto"> {/* Adiciona a rolagem horizontal */}
-        <table className="min-w-full bg-gray-900 border border-gray-900 rounded-lg mobile:text-[10px] lg:text-[16px]">
+        <table className="min-w-full bg-gray-900 border border-gray-900 rounded-lg mobile:text-[10px] lg:text-[14px]">
           <thead>
             <tr>
               <th className="py-3 px-4 bg-gray-900 text-left font-semibold">Classificação</th>

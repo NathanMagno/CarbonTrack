@@ -1,20 +1,20 @@
-{/*"use client"
+"use client"
 import "@/app/styles/inicial.css"
-import YINL from "/ciclo-um-ano.jpg"
-import MDC from "/mercado-de-carbono.jpg"
-import VN from "/emissao-carbono-terra.jpg"
+import YINL from "/public/ciclo-um-ano.jpg"
+import MDC from "/public/mercado-de-carbono.jpg"
+import VN from "/public/emissao-carbono-terra.jpg"
 import Logo from "@/icons/logo-CarbonTrack.png"
-import Calculo from "/casa.jpg"
-import Integrantes from "/github-640x640.png"
+import Calculo from "/public/casa.jpg"
+import Integrantes from "/public/github-640x640.png"
 import ContainerVideo from "../ContainerVideo/ContainerVideo"
 import Funcionalidade from "../Funcionalidade/Funcionalidade"
-*/}
+
 export default function BgInicial() {
   return (
     <main className="BgInicial">
 
         <section className="Funcionaliodades">
-        {/*
+        
             <Funcionalidade destino="/sobre" img={Logo} txt="A Carbon Track é uma plataforma independente criada para conscientizar
              e informar os usuários sobre o impacto ambiental das emissões de CO₂ geradas no ambiente doméstico.
               Reconhecendo a falta de informações acessíveis sobre esse tema, oferecemos uma ferramenta exclusiva para calcular as emissões de CO₂
@@ -29,7 +29,7 @@ export default function BgInicial() {
 
             <Funcionalidade destino="/integrantes" img={Integrantes} txt="Nossa equipe de profissionais que contribuiu para este projeto, contendo o Linkeedin e Github de
              cada integrante para que você possa conhecer mais sobre o trabalho de cada um." largura={100}/>
-*/}
+
       </section>
     
       <article className="ContainerVideos">
@@ -39,7 +39,7 @@ export default function BgInicial() {
               Alguns documentários interessantes para entender como as emissões de CO₂ afetam
                o clima global e como podemos agir para mitigar os danos.</h2>
               </div>
-   {/*
+   
        <ContainerVideo desc="Capa do documentário Mercado de carbono" img={MDC} link="https://www.youtube.com/watch?v=Orf6uLM1Mxc&t=4s" txt="O aumento das temperaturas e as mudanças climáticas exigem ações urgentes até 2030 para evitar danos irreversíveis.
            O mercado de carbono surge como solução,
             promovendo práticas sustentáveis como reflorestamento e energia renovável para reduzir emissões de CO₂"/>
@@ -50,7 +50,7 @@ export default function BgInicial() {
        <ContainerVideo desc="Capa do vídeo de simulação do CO₂ dyrabte um ano" img={YINL} link="https://www.youtube.com/watch?v=x1SgmFa0r04&t=1s" 
        txt=" Simulação do ciclo de dióxido de carbono (CO₂) na Terra, mostrando como ele se move pela atmosfera ao longo do ano.
         A visualização destaca como diferentes fontes e sumidouros naturais contribuem para a concentração de CO₂, enfatizando o impacto das atividades humanas no aumento das emissões globais"/>
-*/}
+
      
       </article>
     </main>
