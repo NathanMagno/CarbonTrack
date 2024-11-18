@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import "./styles/globals.css";
-import { minhaFonte} from "@/app/font/font"
+import { minhaFonte } from "@/app/font/font";
 import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Rodape from "@/components/Rodape/Rodape";
+import type { Metadata } from "next";
+import "./styles/globals.css";
 
 
 export const metadata: Metadata = {
@@ -17,10 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${minhaFonte.className} antialiased`}>
-        <Cabecalho/>
+      <body className={`${minhaFonte.className} antialiased overflow-x-hidden`}>
+        <Cabecalho />
         {children}
-        <Rodape/>
+        <Rodape />
       </body>
     </html>
   );
