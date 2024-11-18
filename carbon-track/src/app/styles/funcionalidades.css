@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .BgFuncionalidade {
-    @apply bg-inicial h-[100%] block m-auto py-12;
+    @apply bg-inicial h-[100%] block m-auto py-12 min-h-[100vh];
 }
 
 .ContainerIntegrantes {
