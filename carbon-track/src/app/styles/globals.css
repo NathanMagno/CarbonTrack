@@ -53,7 +53,7 @@
     @apply rounded-[4px]
       px-[45px] py-[15px] text-[20px] 
       bg-transparent border-2 border-secondary text-secondary 
-      cursor-pointer transition-all duration-200 
+      cursor-pointer transition-all duration-200 3xl:text-[20px] 2xl:text-[16px] md:text-[14px]
       hover:shadow-[0px_0px_12px_#00BF00,inset_0px_0px_12px_#00BF00]; 
   }
   
