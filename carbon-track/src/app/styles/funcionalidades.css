@@ -3,77 +3,58 @@
 @tailwind utilities;
 
 .BgFuncionalidade {
-    @apply bg-inicial h-[100%] block m-auto p-0;
+    @apply bg-inicial h-[100%] block m-auto py-12;
 }
 
 .ContainerIntegrantes {
-    @apply flex mt-16 pb-8 items-start justify-center;
+    @apply flex  pb-8 items-center justify-center;
 }
 
 .IntegrantesTitulo {
-    @apply xl:text-[32px] rounded-xl px-10 bg-fiap xl:w-[20vw] mobile:w-[50vw];
+    @apply xl:text-[32px] rounded-xl px-10 bg-fiap xl:w-[20vw] mobile:w-[50vw] block m-auto text-center ; 
 }
 
 .IntegrantesInfo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 1rem;
-    text-align: center;
+@apply  grid grid-cols-3 gap-8 p-4 text-center md:grid-cols-3 mobile:grid-cols-1 text-white pb-10
 }
 
-.IntegrantesInfo figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+
+.ImgIntegrantes
+{
+    @apply rounded-md 
 }
 
-.IntegrantesInfo img {
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.FigureIntegrantes{
+    @apply m-auto block
 }
 
-.IntegrantesInfo .nome,
-.IntegrantesInfo .rm,
-.IntegrantesInfo .social-links {
-    margin-top: 0.5rem;
+
+
+.ListaImgs{
+    @apply   m-auto left-0 right-0  grid lg:grid-cols-3 grid-rows-2 gap-10 justify-center  text-center bg-white   w-[100vw] py-8
 }
 
-.IntegrantesInfo .nome {
-    font-weight: bold;
-    color: #333;
+.GitHub{
+    @apply block m-auto
 }
 
-.IntegrantesInfo .rm {
-    font-size: 0.9rem;
-    color: #555;
+.Linkedin{
+    @apply block m-auto
 }
 
-.social-links {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
+.RodapeIntegrantes{
+    @apply  mt-[5vh] text-base flex h-[10vh] flex-col items-center text-fiap gap-10 mobile:text-[10px] xl:text-[24px]
 }
 
-.social-links a {
-    display: inline-block;
-}
 
-.social-links img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-@media (max-width: 1024px) {
-    .IntegrantesInfo {
-        grid-template-columns: repeat(2, 1fr);
+    .RepositorioContainer{
+        @apply  mx-auto flex flex-row rounded-[32px] justify-center items-center gap-[1vw]  border-[0.15vw] border-fiap shadow-[0px_0px_12px_#ed145b]   
+        hover:shadow-[0px_0px_12px_#ed145b,inset_0px_0px_12px_#ed145b] bg-white
+         mb-[10vh] w-[28vw] cursor-pointer px-[1vw] py-[0.2vh] hover:bg-[#262626] hover:transition-all hover:duration-200 hover:ease-in-out text-[120%]
+          lg:text-[90%] md:text-[70%] sm:text-[50%] mobile:w-[70vw] lg:w-[22vw]
     }
-}
+    
 
-@media (max-width: 768px) {
-    .IntegrantesInfo {
-        grid-template-columns: 1fr;
-    }
-}
+    .Li{
+        @apply  block list-none cursor-pointer hover:text-white transition-all duration-100 ease-in  hover:text-[1.6em]
+        } 

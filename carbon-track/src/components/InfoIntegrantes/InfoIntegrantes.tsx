@@ -5,16 +5,16 @@ import "@/app/styles/funcionalidades.css"
          return (
                  <>
                          <div className="IntegrantesInfo">
-                                 <figure>
-                                         <Image src="/Gabriel-Yuji.jpeg" alt="Gabriel Yuji" className="Gabriel" width={100} height={100} quality={100}
+                                 <figure className="FigureIntegrantes">
+                                         <Image src="/Gabriel-Yuji.jpeg" alt="Gabriel Yuji" className="ImgIntegrantes" width={85} height={100} quality={100}
                                                  />
                                  </figure>
-                                 <figure>
-                                         <Image src="/Gustavo-de-Aguiar.jpeg" alt="Gustavo de Aguiar" className="Gustavo" width={100} height={100} quality={100}
+                                 <figure className="FigureIntegrantes">
+                                         <Image src="/Gustavo-de-Aguiar.jpeg" alt="Gustavo de Aguiar" className="ImgIntegrantes" width={100} height={120} quality={100}
                                                  />
                                  </figure>
-                                 <figure>
-                                         <Image src="/Nathan-Magno.jpeg" alt="Nathan Magno" className="Nathan" width={100} height={100} quality={100}/> 
+                                 <figure className="FigureIntegrantes">
+                                         <Image src="/Nathan-Magno.jpeg" alt="Nathan Magno" className="ImgIntegrantes" width={130} height={200} quality={100}/> 
                                  </figure>
                                  <span>Gabriel Yuji Suzuki</span>
                                  <span>Gustavo de Aguiar Lima Silva</span>
@@ -26,26 +26,26 @@ import "@/app/styles/funcionalidades.css"
                          </div>
                                 
                                          <nav>
-                                                 <div className="ListaGitHub">
-                                                         <a href="https://github.com/Nanfer12007" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                 <div className="ListaImgs">
+                                                         <a href="https://github.com/Nanfer12007" target="_blank"><Image className="GitHub" width={80} height={100}
                                                                  src="/github-icone.png"
                                                                  alt="git hub Gabriel" /></a>
-                                                         <a href="https://github.com/gudeaguiar" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                         <a href="https://github.com/gudeaguiar" target="_blank"><Image className="GitHub" width={80} height={100}
                                                                  src="/github-icone.png"
                                                                  alt="git hub Gustavo" /></a>
-                                                         <a href="https://github.com/Hitz299" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                         <a href="https://github.com/Hitz299" target="_blank"><Image className="GitHub" width={80} height={100}
                                                                  src="/github-icone.png"
                                                                  alt="git hub Nathan" /></a>
                                                             
-                                                            <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                            <a href="https://www.linkedin.com/in/gabriel-yuji-suzuki-6b38a42b9/" target="_blank"><Image className="Linkedin" width={100} height={100}
                                                                  src="/linkedin.png"
-                                                                 alt="git hub Gabriel" /></a>
-                                                         <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                                 alt="linkedin do Gabriel" /></a>
+                                                         <a href="www.linkedin.com/in/gustavo-de-aguiar-ab555a287" target="_blank"><Image className="Linkedin" width={100} height={100}
                                                                  src="/linkedin.png"
-                                                                 alt="git hub Gustavo" /></a>
-                                                         <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="GitHub" width={100} height={100}
+                                                                 alt="linkedin do Gustavo" /></a>       
+                                                         <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="Linkedin" width={100} height={100}
                                                                  src="/linkedin.png"
-                                                                 alt="git hub Nathan" /></a>
+                                                                 alt="linkedin do Nathan" /></a>
                                                   
                                                  </div>
                                          </nav>
