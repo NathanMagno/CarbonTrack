@@ -1,24 +1,26 @@
-"use client"
+
 import BgFuncionalidades from "@/components/BgFuncionalidades/BgFuncionalidades";
 import SobreComponent from "@/components/SobreComponent/SobreComponent";
-import { useEffect } from "react";
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sobre'
+};
 
 
 export default function Sobre() {
-  
-  
-  useEffect (() => {
-    document.title = "Sobre"
-  }, []);
+
+
 
   return (
     <>
-    
-    <BgFuncionalidades>
 
-      <SobreComponent/>
+      <BgFuncionalidades>
 
-    </BgFuncionalidades>
+        <SobreComponent />
+
+      </BgFuncionalidades>
 
 
     </>

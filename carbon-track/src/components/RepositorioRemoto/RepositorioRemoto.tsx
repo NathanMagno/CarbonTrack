@@ -1,6 +1,7 @@
-import { useRouter } from "next/navigation"
-import Nuvem from "@/icons/nuvem-50x50.png"
+"use client"
+import Nuvem from "@/icons/nuvem-50x50.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function RepositorioRemoto() {
 
@@ -10,7 +11,7 @@ export default function RepositorioRemoto() {
     nav.push('/')
   }
 
- const navegar = () => {
+  const navegar = () => {
     return (
       window.open("https://github.com/Hitz299/CarbonTrack/tree/front", "_blank")
     )
@@ -19,7 +20,7 @@ export default function RepositorioRemoto() {
 
   return (
     <>
-       <aside className="RodapeIntegrantes">
+      <aside className="RodapeIntegrantes">
 
 
 
@@ -29,7 +30,7 @@ export default function RepositorioRemoto() {
 
           <p>Repositório Remoto</p>
 
-          <Image alt="Icone de nuvem" src={Nuvem}/>
+          <Image alt="Icone de nuvem" src={Nuvem} />
         </div>
 
         <nav>

@@ -1,16 +1,17 @@
-"use client"
+
 import BgInicial from "@/components/BgInicial/BgInicial";
-import { useEffect } from "react";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home'
+};
 
 export default function Home() {
 
-  useEffect (() => {
-    document.title = "Home"
-  }, []);
 
   return (
     <>
-    <BgInicial/>
-    </> 
+      <BgInicial />
+    </>
   );
 }

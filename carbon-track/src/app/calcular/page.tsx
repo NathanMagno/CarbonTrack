@@ -1,20 +1,20 @@
-"use client"
-import BgFuncionalidades from '@/components/BgFuncionalidades/BgFuncionalidades'
-import FormularioCalculo from '@/components/FormularioCalculo/FormularioCalculo'
-import "@/app/styles/funcionalidades.css"
-import { useEffect } from "react"
+import "@/app/styles/funcionalidades.css";
+import BgFuncionalidades from '@/components/BgFuncionalidades/BgFuncionalidades';
+import FormularioCalculo from '@/components/FormularioCalculo/FormularioCalculo';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Calcular'
+};
 
 export default function Calcular() {
 
-  useEffect(() => {
-    document.title = "Calcular Emissao"
-  }, []);
 
   return (
     <>
-    <BgFuncionalidades>
-      <FormularioCalculo/>
-    </BgFuncionalidades>
+      <BgFuncionalidades>
+        <FormularioCalculo />
+      </BgFuncionalidades>
     </>
   )
 }

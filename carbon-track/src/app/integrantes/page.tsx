@@ -1,24 +1,25 @@
-"use client"
 import BgFuncionalidades from "@/components/BgFuncionalidades/BgFuncionalidades";
 import InfoIntegrantes from "@/components/InfoIntegrantes/InfoIntegrantes";
 import IntegrantesTopo from "@/components/IntegrantesTopo/IntegrantesTopo";
 import RepositorioRemoto from "@/components/RepositorioRemoto/RepositorioRemoto";
-import { useEffect } from "react"
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Integrantes',
+};
 
 
 export default function Integrantes() {
 
-  useEffect(() => {
-    document.title = "Integrantes"
-  }, []);
+
 
   return (
     <>
       <BgFuncionalidades>
 
-      <IntegrantesTopo />
-      <InfoIntegrantes/>
-      <RepositorioRemoto/>
+        <IntegrantesTopo />
+        <InfoIntegrantes />
+        <RepositorioRemoto />
 
       </BgFuncionalidades>
     </>
