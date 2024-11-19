@@ -35,8 +35,8 @@ export default function SobreComponent() {
         </p>
 
         <p className="text-lg text-secondary mb-6">
-          É fundamental que todos nós compreendamos a importância de <strong>reduzir nossa pegada de carbono</strong>
-          e de buscar alternativas mais sustentáveis para o nosso consumo de energia. Uma das maneiras mais eficazes
+          É fundamental que todos nós possamos compreender a importância de <strong>reduzir nossa pegada de carbono</strong>
+           e de buscar alternativas mais sustentáveis para o nosso consumo de energia. Uma das maneiras mais eficazes
           de fazer isso é migrando para <strong>fontes de energia renováveis</strong>, como solar, eólica, hidrelétrica
           e outras alternativas que não emitem CO₂.
         </p>
