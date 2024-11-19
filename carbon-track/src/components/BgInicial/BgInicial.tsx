@@ -11,6 +11,7 @@ import Funcionalidade from "../Funcionalidade/Funcionalidade"
 
 export default function BgInicial() {
   return (
+    
     <main className="BgInicial">
 
         <section className="Funcionaliodades">

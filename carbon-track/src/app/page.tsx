@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { Metadata } from 'next';
 
+
 export const metadata: Metadata = {
   title: 'Home'
 };
@@ -18,7 +19,9 @@ export default async function Home() {
 
   return (
     <>
+
       <BgInicial />
+
     </>
   );
 }
