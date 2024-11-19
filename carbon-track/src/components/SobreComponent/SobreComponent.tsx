@@ -4,8 +4,8 @@ export default function SobreComponent() {
   return (
    <>
       <div className="p-6 lg:p-12 text-center lg:text-left bg-inicial">
-        <h1 className="text-3xl font-bold text-secondary mb-6">
-          Bem-vindo ao Carbon Track
+        <h1 className="text-3xl font-bold text-fiap mb-6">
+          Bem-vindo ao Carbon Track 🍃
         </h1>
 
         <p className="text-lg text-secondary mb-6">
