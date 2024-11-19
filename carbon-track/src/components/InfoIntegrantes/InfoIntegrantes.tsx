@@ -40,10 +40,10 @@ import "@/app/styles/funcionalidades.css"
                                                             <a href="https://www.linkedin.com/in/gabriel-yuji-suzuki-6b38a42b9/" target="_blank"><Image className="Linkedin" width={100} height={100}
                                                                  src="/linkedin.png"
                                                                  alt="linkedin do Gabriel" /></a>
-                                                         <a href="www.linkedin.com/in/gustavo-de-aguiar-ab555a287" target="_blank"><Image className="Linkedin" width={100} height={100}
+                                                         <a href="https://www.linkedin.com/in/gustavo-de-aguiar-sn160308/" target="_blank"><Image className="Linkedin" width={100} height={100}
                                                                  src="/linkedin.png"
                                                                  alt="linkedin do Gustavo" /></a>       
-                                                         <a href="www.linkedin.com/in/nathan-magno" target="_blank"><Image className="Linkedin" width={100} height={100}
+                                                         <a href="https://www.linkedin.com/in/nathan-magno/" target="_blank"><Image className="Linkedin" width={100} height={100}
                                                                  src="/linkedin.png"
                                                                  alt="linkedin do Nathan" /></a>
                                                   
