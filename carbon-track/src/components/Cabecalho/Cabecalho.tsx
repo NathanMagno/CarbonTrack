@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import Menu from "@/icons/menu-100x100.png";
+import LogoutButton from "../BtnLogOut/BtnLogOut";
 
 
 export default function Cabecalho() {
@@ -59,12 +60,13 @@ export default function Cabecalho() {
             </button>
             </div>
             <div className="CabecalhoIntegrantes">
-            <button
+              <button
               className="BtnIntegrantes"
               onClick={() => navegar("/integrantes")}
-            >
+              >
                 Integrantes
-            </button>
+              </button>
+              <LogoutButton/>
             </div>
           </nav>
         </div>

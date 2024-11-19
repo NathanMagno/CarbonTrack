@@ -77,3 +77,7 @@
     cursor-pointer transition-all duration-200 
     shadow-[0px_0px_8px_#00BF00]; 
 }
+
+.CabecalhoIntegrantes{
+  @apply w-[100%]  flex flex-row justify-evenly
+}
