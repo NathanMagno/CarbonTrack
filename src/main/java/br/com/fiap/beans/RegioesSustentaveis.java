@@ -45,41 +45,31 @@ public class RegioesSustentaveis {
 		this.estado = estado;
 	}
 	
-	public String locaisProximos(float distancia)
-	{
-		ArrayList<String> areasOficinas = new ArrayList<String>();
-		if (distancia < 0)
-		{
-			System.out.print("Entrada inválida");
-		}
-		if (distancia >= 0.0f && distancia <= 10.00f)
-		{
-			areasOficinas = new ArrayList<>(
-					Arrays.asList("Aracaju", "Litoral do Nordeste"));
-		}
-		else if (distancia >= 10.1f && distancia <= 20.00f)
-		{
-			areasOficinas = new ArrayList<>(
-					Arrays.asList("Aracaju", "Litoral do Nordeste", "João Pessoa", "Fortaleza", "Porto Seguro"));
-		}
-		else
-		{
-			areasOficinas = new ArrayList<>(
-					Arrays.asList("Aracaju", "Litoral do Nordeste", "João Pessoa", "Fortaleza", "Porto Seguro",
-							"Salvador", "Campina Grande"));
-		}
-		return "Com base na distância informada, as oficinas mais proximas são: " + areasOficinas.toString();
-	}
-	
-	
-	public String mostrarLocais() {
-		ArrayList<String> areasOficinas = new ArrayList<>(
-				Arrays.asList("Aracaju", "Litoral do Nordeste", "João Pessoa", "Fortaleza", "Xique Xique"));
-		
-		Random retornoAleatorio = new Random();
-		int indiceLista = retornoAleatorio.nextInt(areasOficinas.size());
-		String  retornoLocal = areasOficinas.get(indiceLista);
-		return "\nLocais próximos de oficina: " + retornoLocal	;
-	}
+	 public String regioesProximas(float distancia) {
+	        ArrayList<String> areasSustentaveis = new ArrayList<>();
+	        
+	        if (distancia < 0) {
+	            return "Entrada inválida. Por favor, insira uma distância positiva.";
+	        }
+	        
+	        if (distancia >= 0.0f && distancia <= 10.00f) {
+	            areasSustentaveis = new ArrayList<>(
+	                    Arrays.asList("Parque Ambiental Aracaju", "Reserva Ecológica Litoral do Nordeste"));
+	        } else if (distancia >= 10.1f && distancia <= 20.00f) {
+	            areasSustentaveis = new ArrayList<>(
+	                    Arrays.asList("Parque Ambiental Aracaju", "Reserva Ecológica Litoral do Nordeste", 
+	                                  "Área de Reflorestamento João Pessoa", "EcoVila Fortaleza", 
+	                                  "Projeto de Energias Renováveis Porto Seguro"));
+	        } else {
+	            areasSustentaveis = new ArrayList<>(
+	                    Arrays.asList("Parque Ambiental Aracaju", "Reserva Ecológica Litoral do Nordeste", 
+	                                  "Área de Reflorestamento João Pessoa", "EcoVila Fortaleza", 
+	                                  "Projeto de Energias Renováveis Porto Seguro", 
+	                                  "Centro de Agroecologia Salvador", "Iniciativa Sustentável Campina Grande"));
+	        }
+	        
+	        return "Com base na distância informada, as regiões sustentáveis mais próximas são: " + areasSustentaveis.toString();
+	    }
 
+	   
 }
