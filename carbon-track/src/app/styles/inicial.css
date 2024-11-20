@@ -23,7 +23,7 @@
 }
 
 .ContainerVideo {
-    @apply relative flex flex-col items-center bg-primary p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0px_0px_18px_#ed145b];
+    @apply relative cursor-pointer flex flex-col items-center bg-primary p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0px_0px_18px_#ed145b];
 }
 
 .ImgVideo {

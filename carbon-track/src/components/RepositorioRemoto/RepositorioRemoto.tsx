@@ -1,15 +1,12 @@
 "use client"
 import Nuvem from "@/icons/nuvem-50x50.png";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+
 
 export default function RepositorioRemoto() {
 
-  const nav = useRouter();
 
-  const irHome = () => {
-    nav.push('/')
-  }
+
 
   const navegar = () => {
     return (
@@ -32,10 +29,6 @@ export default function RepositorioRemoto() {
 
           <Image alt="Icone de nuvem" src={Nuvem} />
         </div>
-
-        <nav>
-          <p className="Li" onClick={irHome}>Página Inicial</p>
-        </nav>
 
 
       </aside>
