@@ -1,44 +1,78 @@
 package br.com.fiap.model;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Resultado {
 
-	private double gasto_luz;
-	private double gasto_gas;
-	private double resultado_calculo;
+    private int idResultado;
+    private double gastoLuz;
+    private double gastoGas;
+    private double resultadoCalculo;
+    private LocalDateTime dataCalculo;
 
-	public Resultado() {
-		super();
-	}
+    public Resultado() {
+        super();
+    }
 
-	public Resultado(double gasto_luz, double gasto_gas, double resultado_calculo) {
-		super();
-		this.gasto_luz = gasto_luz;
-		this.gasto_gas = gasto_gas;
-		this.resultado_calculo = resultado_calculo;
-	}
+    public Resultado(int idResultado, double gastoLuz, double gastoGas, double resultadoCalculo, LocalDateTime dataCalculo) {
+        super();
+        this.idResultado = idResultado;
+        this.gastoLuz = gastoLuz;
+        this.gastoGas = gastoGas;
+        this.resultadoCalculo = resultadoCalculo;
+        this.dataCalculo = dataCalculo;
+    }
 
-	public double getGasto_luz() {
-		return gasto_luz;
-	}
+    public int getIdResultado() {
+        return idResultado;
+    }
 
-	public void setGasto_luz(double gasto_luz) {
-		this.gasto_luz = gasto_luz;
-	}
+    public void setIdResultado(int idResultado) {
+        this.idResultado = idResultado;
+    }
 
-	public double getGasto_gas() {
-		return gasto_gas;
-	}
+    public double getGastoLuz() {
+        return gastoLuz;
+    }
 
-	public void setGasto_gas(double gasto_gas) {
-		this.gasto_gas = gasto_gas;
-	}
+    public void setGastoLuz(double gastoLuz) {
+        this.gastoLuz = gastoLuz;
+    }
 
-	public double getResultado_calculo() {
-		return resultado_calculo;
-	}
+    public double getGastoGas() {
+        return gastoGas;
+    }
 
-	public void setResultado_calculo(double resultado_calculo) {
-		this.resultado_calculo = resultado_calculo;
-	}
+    public void setGastoGas(double gastoGas) {
+        this.gastoGas = gastoGas;
+    }
 
+    public double getResultadoCalculo() {
+        return resultadoCalculo;
+    }
+
+    public void setResultadoCalculo(double resultadoCalculo) {
+        this.resultadoCalculo = resultadoCalculo;
+    }
+
+    public LocalDateTime getDataCalculo() {
+        return dataCalculo;
+    }
+
+    public void setDataCalculo(LocalDateTime dataCalculo) {
+        this.dataCalculo = dataCalculo;
+    }
+
+
+    public String getDataCalculoFormatada() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return dataCalculo.format(formatter);
+    }
+
+    @Override
+    public String toString() {
+        return "idResultado = " + idResultado + ", gastoLuz = " + gastoLuz + ", gastoGas = " + gastoGas
+                + ", resultadoCalculo = " + resultadoCalculo + ", dataCalculo = " + getDataCalculoFormatada();
+    }
 }

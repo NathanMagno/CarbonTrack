@@ -8,6 +8,7 @@ import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import br.com.fiap.resource.CorsFilter;
+import br.com.fiap.resource.ResultadoResource;
 
 
 
@@ -16,7 +17,7 @@ public class Main {
 
     public static HttpServer startServer() {
         final ResourceConfig rc = new ResourceConfig()
-               // .register(CarroResource.class)
+                .register(ResultadoResource.class)
                 .register(CorsFilter.class);
 
         return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
@@ -39,6 +40,7 @@ public class Main {
             System.err.println("Erro ao iniciar o servidor: " + e.getMessage());
         } finally {
             server.shutdownNow();
+          
         }
     }
 }
