@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-import { novoResultado } from "@/services/Resultados";
+import {  useState } from "react";
+import {  novoResultado } from "@/services/Resultados";
 import Resultado from "@/services/types"; 
 import TabelaPegadaCarbono from "../TabelaPegadaCarbono/TabelaPegadaCarbono";
 

@@ -29,7 +29,7 @@ export default function Resultados() {
 
       
     } catch (e) {
-      alert("Erro ao excluir resultado." + e);
+      setError("Erro ao excluir resultado." + e);
     }
   }
 
@@ -39,16 +39,16 @@ export default function Resultados() {
 
   if (resultados.length == 0 && !error) {
     return (
-      <div className="p-4 bg-gray-100 rounded-md shadow-md">
-        <p className="text-center text-gray-500">Nenhum resultado encontrado.</p>
+      <div className="p-4 bg-gray-100 rounded-md shadow-md mt-10">
+        <p className="text-center text-gray-500">Nenhum resultado encontrado 🥲</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="p-4 bg-red-100 rounded-md shadow-md">
-        <p className="text-center text-red-500">{error}</p>
+      <div className="p-4 bg-red-600 rounded-md shadow-md mt-10 ">
+        <p className="text-center text-white">{error}</p>
       </div>
     );
   }
@@ -74,13 +74,8 @@ export default function Resultados() {
             <p className="text-white">
               <strong className="text-secondary">Data do Cálculo:</strong> {new Date(dataCalculo).toLocaleDateString()}
             </p>
-            <div className="mt-4 flex justify-end space-x-10">
-              <button
-                onClick={() => {}}
-                className="Botao"
-              >
-                Editar
-              </button>
+            <div className="mt-4 flex justify-center space-x-10">
+             
               <button
                 onClick={() => handleDelete(idResultado)}
                 className="Botao"
