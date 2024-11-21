@@ -55,7 +55,7 @@ export default function FormularioCalculo() {
             <input
               type="number"
               id="consumo_eletricidade"
-              value={formData.consumoEletricidade}
+              value={formData.consumoEletricidade || ""} 
               onChange={(e) =>
                 setFormData({ ...formData, consumoEletricidade: parseFloat(e.target.value) })
               }
@@ -75,7 +75,7 @@ export default function FormularioCalculo() {
             <input
               type="number"
               id="consumo_gas"
-              value={formData.consumoGas}
+              value={formData.consumoGas || ""} 
               onChange={(e) =>
                 setFormData({ ...formData, consumoGas: parseFloat(e.target.value) })
               }
