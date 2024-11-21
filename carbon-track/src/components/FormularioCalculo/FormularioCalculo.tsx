@@ -1,13 +1,16 @@
 "use client";
 import { useState } from "react";
+import { novoResultado } from "@/services/Resultados";
+import Resultado from "@/services/types"; 
 import TabelaPegadaCarbono from "../TabelaPegadaCarbono/TabelaPegadaCarbono";
 
 export default function FormularioCalculo() {
+
   const [formData, setFormData] = useState({
     consumoEletricidade: 0,
-    tipoEnergia: "não-renovável",
     consumoGas: 0,
   });
+
 
   const [resultado, setResultado] = useState<string | null>(null);
 
@@ -16,20 +19,36 @@ export default function FormularioCalculo() {
     gas: 1.88,
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
 
     const emissaoEletricidade = formData.consumoEletricidade * fatoresEmissao.eletricidade;
     const emissaoGas = formData.consumoGas * fatoresEmissao.gas;
-
     const totalCO2 = emissaoEletricidade + emissaoGas;
 
     setResultado(`Sua pegada de carbono é ${totalCO2.toFixed(2)} kgCO₂ por mês.`);
-  };
+
+
+    const novoObj: Omit<Resultado, "idResultado" | "dataCalculo"> = {
+      gastoLuz: formData.consumoEletricidade.toString(), 
+      gastoGas: formData.consumoGas,
+      resultadoCalculo: totalCO2,
+    };
+
+    try {
+
+      const resultadoCriado = await novoResultado(novoObj);
+
+      console.log("Resultado criado:", resultadoCriado);
+    } catch (error) {
+
+      console.error(error);
+    }
+  }
 
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center lg:space-x-8 p-5">
-
       <div className="flex flex-col items-center w-full lg:w-1/2 text-center gap-6 lg:mb-0">
         <form onSubmit={handleSubmit} className="bg-primary p-5 rounded-lg shadow-md w-full max-w-2xl lg:px-8 lg:py-8">
           <div className="relative z-0 w-full mb-5 group">
@@ -73,7 +92,7 @@ export default function FormularioCalculo() {
           </div>
 
           <button type="submit" className="Botao w-full">
-            Calcular
+            Calcular e Salvar
           </button>
         </form>
 

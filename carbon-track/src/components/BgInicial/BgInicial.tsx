@@ -28,7 +28,7 @@ export default function BgInicial() {
               Com esses dados, aplicamos uma fórmula simplificada que multiplica a quantidade consumida por um fator de emissão específico
                para cada tipo de energia, estimando assim a quantidade de CO₂ equivalente que esse consumo gera." largura={340}/>
 
-            <Funcionalidade destino="/integrantes" img={Integrantes} txt="Nossa equipe de profissionais que contribuiu para este projeto, contendo o Linkeedin e Github de
+            <Funcionalidade destino="/integrantes" img={Integrantes} txt="Nossa equipe de profissionais que contribuiu para este projeto, contendo o Linkedin e Github de
              cada integrante para que você possa conhecer mais sobre o trabalho de cada um." largura={100}/>
 
       </section>

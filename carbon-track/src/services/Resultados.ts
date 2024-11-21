@@ -10,22 +10,23 @@ export async function getResultadoByid(id: number) {
     return promise.json();
 }
 
-export async function novoResultado(objetoResultado: Resultado) {
+export async function novoResultado(objetoResultado: Omit<Resultado, "idResultado" | "dataCalculo">) {
     const promise = await fetch("http://localhost:8080/resultados/", {
-        method: "POST",
-        mode: "cors",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(objetoResultado),
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objetoResultado),
     });
-
+  
     if (!promise.ok) {
-        throw new Error(`Erro: ${promise.status}`); 
+      throw new Error(`Erro: ${promise.status}`);
     }
-
+  
     return promise.json();
-}
+  }
+  
 
 export async function atualizarResultado(id: number, objetoResultado: Resultado) {
     const promise = await fetch(`http://localhost:8080/resultados/${id}`, { 
