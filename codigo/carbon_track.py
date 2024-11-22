@@ -167,6 +167,8 @@ def alterar_resultado(id_resultado, cursor, connection):
         
         connection.commit()
         
+        print(f"\nOs dados do resultado de ID {id_resultado} foram alterados" )
+        
     except Exception as e:
         print(f"Erro ao atualizar o resultado: {e}")
         
@@ -181,6 +183,8 @@ def  deletar_resultado(id_resultado, cursor, connection):
         cursor.execute(sql, {"id": id_resultado})
         
         connection.commit()
+        
+        print(f"\nO resultado com ID {id_resultado} foi deletado" )
         
     except Exception as e:
         print(f"Erro ao deletar o resultado: {e}")
