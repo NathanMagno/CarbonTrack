@@ -294,7 +294,7 @@ def consultar_resultados():
         if escolha == 1:
             selecionar_resultado()
         else:
-            print(f"\nRetornando para o Menu inicial\n")
+            pass
 
 
 
