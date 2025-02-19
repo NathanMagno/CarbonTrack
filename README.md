@@ -87,8 +87,6 @@ Para este projeto, foi desenvolvida uma API em Java para realizar a manipulaçã
 
 Projeto na Vercel: carbon-track-alpha.vercel.app
 
-Vídeo: https://youtu.be/l-2x6CDG-Zo
-
 Repositório Java: https://github.com/Hitz299/CarbonTrack/tree/java
 
 Repositório Front: https://github.com/Hitz299/CarbonTrack/tree/front
