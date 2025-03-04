@@ -1,39 +1,43 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 
-interface FuncionalidadeProps
-{
-    img: StaticImageData;
-    txt: string;
-    destino: string;
-    largura: number;
+interface FuncionalidadeProps {
+  img: StaticImageData;
+  txt: string;
+  destino: string;
+  largura: number;
 }
 
-export default function Funcionalidade({img, txt, destino, largura}: FuncionalidadeProps) {
+export default function Funcionalidade({
+  img,
+  txt,
+  destino,
+  largura,
+}: FuncionalidadeProps) {
+  const router = useRouter();
 
-    const router = useRouter();
-
-    const navegar  = ()=> {
-        router.push(destino);
-      };
+  const navegar = () => {
+    router.push(destino);
+  };
 
   return (
     <>
-    <article  className="ContainerFuncionalidade">
+      <article className="ContainerFuncionalidade" onClick={navegar}>
         <section className="TopFuncionalidade">
-        <div className="ImgFuncionalidade">
-            <Image alt="Imagem ilustrativa de funcionalidade" src={img} className="ImageFuncionalidade" width={largura}/>
-        </div>
+          <div className="ImgFuncionalidade">
+            <Image
+              alt="Imagem ilustrativa de funcionalidade"
+              src={img}
+              className="ImageFuncionalidade"
+              width={largura}
+            />
+          </div>
 
-        <div className="InfoFuncionalidade">
+          <div className="InfoFuncionalidade">
             <p className="txtFuncionalidade">{txt}</p>
-        </div>
+          </div>
         </section>
-        <div className="ContainerButtonFuncionalidade">
-            <button className="Botao" onClick={navegar}>Saber mais</button>
-        </div>
-
-    </article>
+      </article>
     </>
-  )
+  );
 }
