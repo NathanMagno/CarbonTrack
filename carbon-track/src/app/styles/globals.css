@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.menu-container{
+    @apply w-[36vw] h-[80vh] bg-primary text-white p-4 space-y-4 flex flex-col justify-center 
+ }
+ 
+ .Cabecalho{
+     @apply block hidden xl:flex bg-primary text-white w-full p-4  pt-7
+ }
+ 
+ .Rodape{
+  @apply  block absolute bg-primary   w-full
+ }
+ 
+ 
+ .ContainerCabecalho{
+     @apply  container mx-auto flex items-center xl:pl-[5vw] 
+ }
+ 
+ .NavCabecalho {
+    @apply grid grid-cols-2 justify-items-center w-screen; 
+  }
+ 
+ .ItensCabecalhoMobile{
+     @apply block hover:underline cursor-pointer
+ }
+ 
+ .ContainerMobile {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex justify-end z-50;
+}
+
+
+ @layer utilities {
+    .hover-text-shadow {
+      text-shadow: 0px 0px 15px #00BF00;
+    
+    }
+  }
+  
+  .ContainerCabecalhoFuncionalidades{
+    @apply flex flex-row gap-14
+}
+
+  .BtnCabecalho {
+    @apply rounded-[4px]
+      px-[45px] py-[15px] text-[20px] 
+      bg-transparent border-2 border-secondary text-secondary 
+      cursor-pointer transition-all duration-200 3xl:text-[20px] 2xl:text-[16px] md:text-[14px]
+      hover:shadow-[0px_0px_12px_#00BF00,inset_0px_0px_12px_#00BF00]; 
+  }
+  
+  .BtnIntegrantes {
+    @apply rounded-[4px]
+      px-[45px] py-[15px] text-[20px] 
+      bg-transparent border-2 border-fiap text-fiap 
+      cursor-pointer transition-all duration-200 
+      hover:shadow-[0px_0px_12px_#ed145b,inset_0px_0px_12px_#ed145b]; 
+  }
+
+
+  .BtnCabecalho:hover {
+    @apply hover-text-shadow;
+  }
+
+  .Botao{
+    @apply  rounded-[10px]
+    lg:px-[20px] lg:py-[10px] mobile:px-[10px] mobile:py-[6px] lg:text-[20px]  mobile:text-[16px]
+    bg-gray-200 text-secondary 
+    cursor-pointer transition-all duration-200 
+    shadow-[0px_0px_8px_#00BF00]; 
+}
+
+.CabecalhoIntegrantes{
+  @apply w-[100%]  flex flex-row justify-evenly
+}
